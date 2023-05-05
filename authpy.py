@@ -4,7 +4,7 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 
 
 # auth function for Twitter
-def auth_twitter(creds: str = r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json'):
+def auth_twitter(creds: str = r'creds.json'):
 
     # Authenticate to Twitter and get API object.
     creds = read_creds(creds)
@@ -39,7 +39,7 @@ def read_creds(filename):
 
 # test if Twitter api is working
 if __name__ == '__main__':
-    credentials = r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json'
+    credentials = r'creds.json'
     api_twitter = auth_twitter(credentials)
 
     # Try auth access
@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
 # test if Kaggle api is working
 if __name__ == '__main__':
-    credentials = r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json'
+    credentials = r'creds.json'
     api_kaggle = auth_kaggle()
 
     # Try auth access

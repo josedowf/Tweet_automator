@@ -5,7 +5,7 @@ from sql_conn import load_google_article_to_sql, load_kaggle_article_to_sql
 from web_scraper import scraped_article
 
 # access the Twitter API
-twitter_api = auth_twitter(r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json')
+twitter_api = auth_twitter(r'creds.json')
 
 # Google search text
 google_search = 'DeFi news today'

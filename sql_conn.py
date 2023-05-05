@@ -9,7 +9,7 @@ def adapt_numpy_int64(numpy_int64):
 
 
 # connects and loads the tweet to the sql db
-def load_google_article_to_sql(post, creds: str = r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json'):
+def load_google_article_to_sql(post, creds: str = r'creds.json'):
     # authenticate and assign credentials to SQL to execute query.
     creds = read_creds(creds)
     db_host, db_name, port_id = creds['db_host'], creds['db_name'], creds['port_id']
@@ -57,7 +57,7 @@ def load_google_article_to_sql(post, creds: str = r'/Users/josedow/PycharmProjec
 
 
 # pull SQL list
-def previous_tweets_from_google(creds: str = r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json'):
+def previous_tweets_from_google(creds: str = r'creds.json'):
     # authenticate and assign credentials to SQL to execute query.
     creds = read_creds(creds)
     db_host, db_name, port_id = creds['db_host'], creds['db_name'], creds['port_id']
@@ -93,7 +93,7 @@ def previous_tweets_from_google(creds: str = r'/Users/josedow/PycharmProjects/Tw
 
 
 # connects and loads the tweet to the sql db
-def load_kaggle_article_to_sql(post, creds: str = r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json'):
+def load_kaggle_article_to_sql(post, creds: str = r'/creds.json'):
     # authenticate and assign credentials to SQL to execute query.
     creds = read_creds(creds)
     db_host, db_name, port_id = creds['db_host'], creds['db_name'], creds['port_id']
@@ -141,7 +141,7 @@ def load_kaggle_article_to_sql(post, creds: str = r'/Users/josedow/PycharmProjec
 
 
 # pull SQL list
-def previous_tweets_from_kaggle(creds: str = r'/Users/josedow/PycharmProjects/Tweet_automator/creds.json'):
+def previous_tweets_from_kaggle(creds: str = r'creds.json'):
     # authenticate and assign credentials to SQL to execute query.
     creds = read_creds(creds)
     db_host, db_name, port_id = creds['db_host'], creds['db_name'], creds['port_id']
